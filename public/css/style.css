@@ -51,6 +51,10 @@ main {
   font-size: 0.8rem;
 }
 
+#project-desc {
+  height: 200px;
+}
+
 .no-button {
   background: none;
   border: none;
