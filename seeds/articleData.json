@@ -1,0 +1,14 @@
+[
+  {
+    "name": "How to Program in HTML",
+    "description": "Step 1: Turn on your computer.\nStep 2: Open a webpage that teaches you HTML.\nStep 3: Learn HTML and design a webpage."
+  },
+  {
+    "name": "How to Program in JavaScript",
+    "description": "Step 1: Make sure to have a box of tissues nearby.\n Step 2: Prepare yourself mentally through 20 years of meditation with Tibetan monks.\nStep 3: Do not attempt to program in JavaScript."
+  },
+  {
+    "name": "This is a Seeded Article",
+    "description": "This article is just a seed sent to the database to fill in a blank spot on the webpage. You may safely ignore this article."
+  }
+]

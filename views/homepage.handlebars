@@ -1,13 +1,13 @@
-<!-- Loop over each object in the projects array -->
-{{#each projects as |project| }}
+<!-- Loop over each object in the articles array -->
+{{#each articles as |article| }}
 <div class="card">
   <div class="card-header">
-    <h4><a href="/project/{{project.id}}">{{project.name}}</a></h4>
+    <h4><a href="/article/{{article.id}}">{{article.name}}</a></h4>
   </div>
   <div class="card-body">
-    <p class="card-text">{{project.description}}</p>
+    <p class="card-text">{{article.description}}</p>
     <hr>
-    <p class="card-text created">Created by {{project.user.name}} on {{format_date project.date_created}}</p>
+    <p class="card-text created">Created by {{article.user.name}} on {{format_date article.date_created}}</p>
   </div>
 </div>
 {{/each}}
