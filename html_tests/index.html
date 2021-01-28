@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+  <link href="style.css" rel="stylesheet">
+  <title>Tech Blog</title>
+</head>
+
+<body>
+  <nav class="navbar navbar-expand-md">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="/">The Tech Blog</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          {{#if logged_in}}
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="/profile">Profile</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#" id="logout">Log out</a>
+          </li>
+          {{else}}
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="/login">Log in</a>
+          </li>
+          {{/if}}
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <main class="container">
+    <div class="card">
+      <div class="card-header">
+        <h5 class="card-title">The Superfluous <i>No</i></h5>
+      </div>
+      <div class="card-body">
+        <p class="card-text">
+          For some weird reason, with the phrases <i>hasta que</i> and <i>a menos que</i>,
+          there is sometimes a superfluous <i>no</i>. For example, <i>hasta que no termines tu sandwich, no vas a
+          comer.</i>
+          <div class="float-end">
+            <a href="#" class="btn btn-outline-danger">Delete</a>
+          </div>
+        </p>
+      </div>
+    </div>
+
+    <div class="text-center">
+      <button type="button" class="btn btn-success" id="create">Create New</button>
+    </div>
+    
+    <div class="row">
+      <div class="col-md-6">
+        <div class="card">
+          <div class="card-body">
+            <h5 class="card-title">Log in</h5>
+            <p class="card-text">
+              <form class="form login-form">
+                <div class="form-group">
+                  <label for="email-login">email:</label>
+                  <input class="form-input float-end" type="text" id="email-login" />
+                </div>
+                <div class="form-group">
+                  <label for="password-login">password:</label>
+                  <input class="form-input" type="password" id="password-login" />
+                </div>
+                <div class="form-group">
+                  <button class="btn btn-success" type="submit">Go</button>
+                </div>
+              </form>
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-6">
+        <div class="card">
+          <div class="card-body">
+            <h5 class="card-title">Sign up</h5>
+            <p class="card-text">
+              <form class="form signup-form">
+                <div class="form-group">
+                  <label for="name-signup">name:</label>
+                  <input class="form-input" type="text" id="name-signup" />
+                </div>
+                <div class="form-group">
+                  <label for="email-signup">email:</label>
+                  <input class="form-input" type="text" id="email-signup" />
+                </div>
+                <div class="form-group">
+                  <label for="password-signup">password:</label>
+                  <input class="form-input" type="password" id="password-signup" />
+                </div>
+                <div class="form-group">
+                  <button class="btn btn-success" type="submit">Go</button>
+                </div>
+              </form>
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW"
+    crossorigin="anonymous"></script>
+</body>
+
+</html>

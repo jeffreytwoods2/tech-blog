@@ -1,0 +1,37 @@
+main {
+    margin-top: 15px;
+}
+
+.navbar {
+    background-color: midnightblue;
+    color: white;
+}
+
+.navbar-brand {
+    color: #eeeeee;
+}
+
+.nav-link {
+    color: #eeeeee;
+}
+
+.card {
+    margin: 15px 0px;
+}
+
+.card-header {
+    background-color: aliceblue;
+    color: black;
+}
+
+.card-title {
+    margin-bottom: 0;
+}
+
+.form-input {
+    width: 100%;
+}
+
+.btn-success {
+    margin: 5px 0px;
+}
