@@ -40,24 +40,19 @@
   <main class="container">
     <div class="card">
       <div class="card-header">
-        <h5 class="card-title">The Superfluous <i>No</i></h5>
+        <h5 class="card-title">{{project.name}}</i></h5>
       </div>
       <div class="card-body">
-        <p class="card-text">
-          For some weird reason, with the phrases <i>hasta que</i> and <i>a menos que</i>,
-          there is sometimes a superfluous <i>no</i>. For example, <i>hasta que no termines tu sandwich, no vas a
-          comer.</i>
-          <div class="float-end">
-            <a href="#" class="btn btn-outline-danger">Delete</a>
-          </div>
-        </p>
+        <p class="card-text">{{project.description}}</p>
+        <hr>
+        <p class="card-text">Created by {{project.user.name}} on {{format_date project.date_created}}</p>
       </div>
     </div>
 
     <div class="text-center">
       <button type="button" class="btn btn-success" id="create">Create New</button>
     </div>
-    
+
     <div class="row">
       <div class="col-md-6">
         <div class="card">

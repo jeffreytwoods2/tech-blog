@@ -28,12 +28,22 @@ main {
   margin-bottom: 0;
 }
 
+.card-text {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
 .form-input {
   width: 100%;
 }
 
 .btn-success {
   margin: 5px 0px;
+}
+
+.created {
+  font-size: 0.8rem;
 }
 
 .no-button {
