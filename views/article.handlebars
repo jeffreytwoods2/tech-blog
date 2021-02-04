@@ -17,3 +17,31 @@
     <p class="created text-center">Created by {{user.name}} on {{format_date date_created}}</p>
   </div>
 </div>
+
+<hr>
+<div class="card">
+  <div class="card-body">
+    <h5 class="text-center">Comments</h5>
+    {{#each comments as |comment|}}
+    <p class="card-text comment-list">
+      {{comment.description}}
+    </p>
+    <p style="font-size: 0.8rem;">
+      Created by {{comment.user.name}} on {{format_date comment.date_created}}
+    </p>
+    {{/each}}
+    <hr>
+    <form class="form new-comment-form">
+      <input id="article-id" type="hidden" value="{{id}}" />
+      <div class="form-group">
+        <label for="comment-desc"></label>
+        <textarea class="form-input" id="comment-desc" name="comment-desc" placeholder="Leave a comment..."></textarea>
+      </div>
+      <div class="form-group text-end">
+        <button type="submit" class="btn btn-success">Post</button>
+      </div>
+    </form>
+  </div>
+</div>
+
+<script src="/js/article.js"></script>

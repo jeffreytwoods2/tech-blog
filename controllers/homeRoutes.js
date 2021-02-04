@@ -1,5 +1,5 @@
 const router = require('express').Router();
-const { Article, User } = require('../models');
+const { Article, User, Comment } = require('../models');
 const withAuth = require('../utils/auth');
 
 router.get('/', async (req, res) => {
@@ -35,16 +35,24 @@ router.get('/article/:id', async (req, res) => {
           model: User,
           attributes: ['name'],
         },
+        {
+          model: Comment,
+          include: [
+            {model: User}
+          ]
+        }
       ],
     });
 
     const article = articleData.get({ plain: true });
+    console.log(article);
 
     res.render('article', {
       ...article,
       logged_in: req.session.logged_in
     });
   } catch (err) {
+    console.log(err);
     res.status(500).json(err);
   }
 });

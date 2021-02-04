@@ -38,7 +38,7 @@
   </nav>
 
   <main class="container">
-    <div class="card">
+    <div class="card" style="margin-bottom: 0;">
       <div class="card-header">
         <h5 class="card-title">{{article.name}}</i></h5>
       </div>
@@ -48,9 +48,27 @@
         <p class="card-text">Created by {{article.user.name}} on {{format_date article.date_created}}</p>
       </div>
     </div>
-
-    <div class="text-center">
-      <button type="button" class="btn btn-success" id="create">Create New</button>
+    <div class="card" style="margin-top: 0; margin-bottom: 30px; border-top: none;">
+      <div class="card-body">
+        <h5 class="text-center">Comments</h5>
+        <p class="card-text">
+          This is a comment
+        </p>
+        <p style="font-size: 0.8rem;">
+          Created by {{comment.user.name}} on {{format_date article.date_created}}
+        </p>
+        <hr>
+        <form class="form">
+          <div class="form-group">
+            <label for="article-desc"></label>
+            <textarea class="form-input" id="article-desc" name="article-desc"
+              placeholder="Leave a comment..."></textarea>
+          </div>
+          <div class="form-group text-end">
+            <button type="submit" class="btn btn-success">Post</button>
+          </div>
+        </form>
+      </div>
     </div>
 
     <div class="row">
@@ -59,19 +77,19 @@
           <div class="card-body">
             <h5 class="card-title">Log in</h5>
             <p class="card-text">
-              <form class="form login-form">
-                <div class="form-group">
-                  <label for="email-login">email:</label>
-                  <input class="form-input float-end" type="text" id="email-login" />
-                </div>
-                <div class="form-group">
-                  <label for="password-login">password:</label>
-                  <input class="form-input" type="password" id="password-login" />
-                </div>
-                <div class="form-group">
-                  <button class="btn btn-success" type="submit">Go</button>
-                </div>
-              </form>
+            <form class="form login-form">
+              <div class="form-group">
+                <label for="email-login">email:</label>
+                <input class="form-input float-end" type="text" id="email-login" />
+              </div>
+              <div class="form-group">
+                <label for="password-login">password:</label>
+                <input class="form-input" type="password" id="password-login" />
+              </div>
+              <div class="form-group">
+                <button class="btn btn-success" type="submit">Go</button>
+              </div>
+            </form>
             </p>
           </div>
         </div>
@@ -82,23 +100,23 @@
           <div class="card-body">
             <h5 class="card-title">Sign up</h5>
             <p class="card-text">
-              <form class="form signup-form">
-                <div class="form-group">
-                  <label for="name-signup">name:</label>
-                  <input class="form-input" type="text" id="name-signup" />
-                </div>
-                <div class="form-group">
-                  <label for="email-signup">email:</label>
-                  <input class="form-input" type="text" id="email-signup" />
-                </div>
-                <div class="form-group">
-                  <label for="password-signup">password:</label>
-                  <input class="form-input" type="password" id="password-signup" />
-                </div>
-                <div class="form-group">
-                  <button class="btn btn-success" type="submit">Go</button>
-                </div>
-              </form>
+            <form class="form signup-form">
+              <div class="form-group">
+                <label for="name-signup">name:</label>
+                <input class="form-input" type="text" id="name-signup" />
+              </div>
+              <div class="form-group">
+                <label for="email-signup">email:</label>
+                <input class="form-input" type="text" id="email-signup" />
+              </div>
+              <div class="form-group">
+                <label for="password-signup">password:</label>
+                <input class="form-input" type="password" id="password-signup" />
+              </div>
+              <div class="form-group">
+                <button class="btn btn-success" type="submit">Go</button>
+              </div>
+            </form>
             </p>
           </div>
         </div>
