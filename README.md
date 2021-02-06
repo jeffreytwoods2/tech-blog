@@ -7,7 +7,7 @@ A blog to create and read articles on tech-related topics!
 ## Table of Contents
 
 <ul>
-<li>[Installation](#Installation)</li>
+    <li><a href="#Installation">Installation</a></li>
 <li>[Usage](#Usage)</li>
 <li>[License](#License)</li>
 <li>[Questions](#Questions)</li>
