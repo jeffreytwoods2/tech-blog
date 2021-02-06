@@ -9,7 +9,7 @@ A blog to create and read articles on tech-related topics!
 <ul>
     <li><a href="#Installation">Installation</a></li>
     <li><a href="#Usage">Usage</a></li>
-    <li><a href="#License>License</a></li>
+    <li><a href="#License">License</a></li>
     <li><a href="#Questions">Questions</a></li>
 </ul>
 
